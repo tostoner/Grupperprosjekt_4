@@ -1,4 +1,3 @@
 # Intel realsense project
-PC = pointcloud. 
 
-list of examples: https://dev.intelrealsense.com/docs/python2
+gpt kode exports a csv file with the distances in the middle vertical line of the camera. The line is one pixel wide.
