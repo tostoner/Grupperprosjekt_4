@@ -38,13 +38,17 @@ try:
 
         print('Depth values for x = {} saved to depth_values.csv'.format(x_coord))
 
-        # Update the plot
-        ax.clear()
-        ax.plot(depths)
-        ax.set_xlabel('y')
-        ax.set_ylabel('depth')
-        ax.set_title('Depth values for x = {}'.format(x_coord))
-        plt.pause(0.01)
+  #    # Update the plot
+  #    ax.clear()
+  #    ax.plot(depths)
+  #    ax.set_xlabel('y')
+  #    ax.set_ylabel('depth')
+  #    ax.set_title('Depth values for x = {}'.format(x_coord))
+  #    plt.pause(0.01)
+    
+
+
+
 
         # Sleep for a short period of time to prevent high CPU usage
         time.sleep(0.1)
