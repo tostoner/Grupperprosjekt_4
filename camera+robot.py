@@ -17,7 +17,7 @@ pipeline.start(config)
 
 ###Other libraries
 import time
-from multiprocessing import Process, Manager, Queue
+
 
 
 
@@ -72,22 +72,6 @@ def moveRobot(q):
         robot.MoveJ(position)
         positions.pop(0)
 
-q = Queue()
-
-p1 = Process(target = findPositions, args =(positions,))
-p2 = Process(target = moveRobot, args = (q,))
-
-p1.start()
-p2.start()
-
-
 while True:
     if len(positions) > 0:
         position = positions[0]
-        q.put(position)
-
-
-p1.join()
-p2.join()
-
-
